@@ -24,6 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void ConfigureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        // for demo only as it is NoOpPasswordEncoder is deprecated
         auth.inMemoryAuthentication().passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .withUser("user").password("password").roles("USER");
     }
