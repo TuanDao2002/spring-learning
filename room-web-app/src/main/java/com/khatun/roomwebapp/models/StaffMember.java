@@ -17,11 +17,11 @@ public class StaffMember {
     private String lastName;
 
     @Column(name="POSITION")
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) //alternative for ENUM in SQL
     private Position position;
 
     public StaffMember() {
-        this.employeeId = UUID.randomUUID().toString();
+        this.employeeId = UUID.randomUUID().toString(); //create random IDs that are not duplicated 
     }
 
     public StaffMember(String employeeId, String firstName, String lastName, Position position) {
