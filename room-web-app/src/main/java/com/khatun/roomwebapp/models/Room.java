@@ -5,10 +5,10 @@ import javax.persistence.*;
 @Entity
 @Table(name="ROOM")
 public class Room {
-    // map attributes with attributes in schema.sql
+    // map attributes in ROOM class with attributes in schema.sql
     @Id
     @Column(name="ROOM_ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //alternative for AUTO_INCREMENT in SQL
     private long id;
 
     @Column(name="ROOM_NUMBER")
