@@ -5,7 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-    <form th:action="@{/login.html}" method="post">
+<!--perform a POST method for the server to authenticate username and password (cannot use GET method as username and password cannot be submitted to server)-->
+    <form th:action="@{/login}" method="post">
         <div>
             <label>Username: <input type="text" name="username"></label>
             <label>Password: <input type="password" name="password"></label>
