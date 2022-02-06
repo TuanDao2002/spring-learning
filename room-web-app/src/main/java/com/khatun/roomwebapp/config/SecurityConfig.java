@@ -17,7 +17,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login").permitAll() // send request "/login" to authenticate controller
+                .loginPage("/login.html").permitAll() // request for "/login.html" page from AuthenticateController
                 .and()
                 .logout().permitAll();
     }
