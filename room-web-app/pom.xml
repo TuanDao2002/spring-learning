@@ -47,7 +47,8 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-<!--        configure message consumer with rabbit-->
+<!--        use RabbitMQ to send message to this message consumer at room-web-app, start it by using docker with start_rabbit.sh -->
+<!--        configure message consumer -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
