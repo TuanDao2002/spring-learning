@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AuthenticationController {
     @GetMapping("/login")
-    //return the page login.html after receiving "/login" request
+    //return the page login.html after receiving "/login" request (from SecurityConfig or login.html)
     public String getLogin() {
         //return "login.html" (both ways are the same)
         return "login";
