@@ -18,16 +18,19 @@
     </properties>
     <dependencies>
 
-<!--        configure for thymeleaf web template-->
+<!--        dependency for thymeleaf web template-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+
+<!--        dependency for spring MVC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<!--        dependency to configure JPA for mapping Java models with the relational database-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -45,6 +48,7 @@
 <!--            <artifactId>postgresql</artifactId>-->
 <!--        </dependency>-->
 
+<!--        dependency for spring security (authenticate users before accessing the web application)-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
