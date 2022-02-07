@@ -65,7 +65,7 @@
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
 
-<!--        dependency to configure spring actuator (used to monitor the health of the application)-->
+<!--        dependency to configure spring actuator (used to monitor the operational information of the running application)-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
