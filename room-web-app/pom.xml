@@ -17,6 +17,8 @@
         <java.version>11</java.version>
     </properties>
     <dependencies>
+
+<!--        configure for thymeleaf web template-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -31,6 +33,7 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+<!--        configure for h2 database-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -49,9 +52,17 @@
 
 <!--        use RabbitMQ to send message to this message consumer at room-web-app, start it by using docker with start_rabbit.sh -->
 <!--        configure message consumer -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-amqp</artifactId>-->
+<!--        </dependency>-->
+
+<!--        dependency to build spring REST repositories-->
+<!--        expose the data in the repository of the database (package "data") => useful for building React component-->
+<!--        link: http://localhost:8080/api/rest/staffMembers or http://localhost:8080/api/rest/rooms (api/rest/{model object's class name + "s"}-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
 
         <dependency>

@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/", "/api/*").permitAll() // permit all URLs that match these patterns to bypass authentication
+        http.authorizeRequests().antMatchers("/", "/api/*", "/api/rest/*").permitAll() // permit all URLs that match these patterns to bypass authentication
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
